@@ -72,7 +72,7 @@ export function Home(): JSX.Element {
               <p className="section-kicker">Sobre nos</p>
               <h2>Precisao tecnica com olhar de atelier.</h2>
               <p>
-                O Aline Studio une biosseguranca, curadoria de materiais e design personalizado para criar unhas
+                Aline Studio une biosseguranca, curadoria de materiais e design personalizado para criar unhas
                 que funcionam no close da camera e na rotina real. Cada atendimento comeca com analise da estrutura
                 natural, estilo da cliente e durabilidade esperada.
               </p>
@@ -92,7 +92,7 @@ export function Home(): JSX.Element {
               </div>
             </div>
             <div className="about__frame reveal-right">
-              <img src={heroNails} alt="Maos com nail art fucsia e dourada em fundo escuro" loading="lazy" />
+              <img src={heroNails} alt="Mãos com nail art fucsia e dourada em fundo escuro" loading="lazy" />
             </div>
           </div>
         </section>
@@ -100,9 +100,9 @@ export function Home(): JSX.Element {
         <section className="section services" id="servicos">
           <div className="container">
             <div className="section-heading reveal-up">
-              <p className="section-kicker">Servicos</p>
+              <p className="section-kicker">Serviços</p>
               <h2>Menu enxuto. Execucao sem improviso.</h2>
-              <p>Servicos pensados para resistencia, acabamento e manutencao inteligente.</p>
+              <p>Serviços pensados para resistencia, acabamento e manutenção inteligente.</p>
             </div>
             <div className="service-grid reveal-up" data-stagger>
               {services.map((service) => (
@@ -180,12 +180,11 @@ export function Home(): JSX.Element {
             Aline Studio
           </a>
           <nav aria-label="Links do rodape">
-            <a href="#servicos">Servicos</a>
+            <a href="#servicos">Serviços</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contato">Contato</a>
             <a href="/admin/login">Admin</a>
           </nav>
-          <p>Feito com cuidado para Aline Studio.</p>
         </div>
       </footer>
     </div>
