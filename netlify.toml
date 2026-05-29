@@ -1,14 +1,13 @@
 [build]
-  base = "frontend"
   command = "npm run build"
-  publish = "dist"
-  functions = "../netlify/functions"
+  publish = "frontend/dist"
+  functions = "netlify/functions"
 
 [functions]
   node_bundler = "esbuild"
 
 [dev]
-  command = "npm run dev -- --host 0.0.0.0"
+  command = "npm --prefix frontend run dev -- --host 0.0.0.0"
   port = 8888
   targetPort = 5173
   framework = "#custom"
