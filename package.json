@@ -1,0 +1,30 @@
+{
+  "name": "nails-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npx netlify-cli dev",
+    "build": "npm --prefix frontend run build",
+    "typecheck:functions": "tsc -p tsconfig.functions.json --noEmit",
+    "generate-hash": "node scripts/generate-hash.js"
+  },
+  "overrides": {
+    "rollup": "^4.60.4"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^9.1.0",
+    "bcryptjs": "^3.0.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^4.2.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
